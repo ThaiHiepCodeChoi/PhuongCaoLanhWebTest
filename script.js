@@ -146,8 +146,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function animateCounters() {
     statNumbers.forEach(counter => {
-      const target = parseFloat(counter.getAttribute('data-target'));
-      const isDecimal = target % 1 !== 0;
+      const targetAttr = counter.getAttribute('data-target') || '0';
+      const target = parseFloat(targetAttr);
+      const decimalPlaces = targetAttr.includes('.') ? (targetAttr.split('.')[1] || '').length : 0;
       const duration = 2000;
       const startTime = performance.now();
 
@@ -159,8 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const easeOut = 1 - Math.pow(1 - progress, 3);
         const currentVal = target * easeOut;
 
-        if (isDecimal) {
-          counter.textContent = currentVal.toFixed(1);
+        if (decimalPlaces > 0) {
+          counter.textContent = currentVal.toFixed(decimalPlaces);
         } else if (target >= 1000) {
           counter.textContent = Math.floor(currentVal).toLocaleString('vi-VN');
         } else {
@@ -170,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (progress < 1) {
           requestAnimationFrame(updateCounter);
         } else {
-          if (isDecimal) {
-            counter.textContent = target.toFixed(1);
+          if (decimalPlaces > 0) {
+            counter.textContent = target.toFixed(decimalPlaces);
           } else if (target >= 1000) {
             counter.textContent = target.toLocaleString('vi-VN');
           } else {

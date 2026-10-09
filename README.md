@@ -70,11 +70,21 @@ webGioiThieu/
 ├── script.js             # Logic xử lý tương tác JavaScript thuần
 ├── README.md             # Hướng dẫn chi tiết triển khai
 └── assets/
-    └── images/           # Thư mục hình ảnh chất lượng cao
-        ├── hero.jpg
-        ├── nguyen_sinh_sac.jpg
-        ├── xoai_cao_lanh.jpg
-        └── am_thuc.jpg
+    └── images/           # Bộ sưu tập ảnh thật 100% tại Cao Lãnh & Đồng Tháp
+        ├── cau_cao_lanh.jpg       # Cầu Cao Lãnh rực rỡ ánh sáng hoa sen bắc qua sông Tiền
+        ├── hero.jpg               # Ảnh nền Hero toàn cảnh Cầu Cao Lãnh
+        ├── nguyen_sinh_sac.jpg    # Lăng mộ Cụ Phó bảng Nguyễn Sinh Sắc hình vòm hoa sen
+        ├── do_cong_tuong.jpg      # Đền thờ Ông Bà Đỗ Công Tường (cội nguồn địa danh Cao Lãnh)
+        ├── cong_vien_van_mieu.jpg # Công viên Văn Miếu & Hồ Khổng Tử (sen nia khổng lồ)
+        ├── van_mieu.jpg           # Văn Thánh Miếu Cao Lãnh cổ kính
+        ├── lang_hoa_an_xua.jpg    # Không gian sông nước miệt vườn Làng quê Cao Lãnh
+        ├── bao_tang_dong_thap.jpg # Bảo tàng Tỉnh Đồng Tháp (cổ vật văn hóa Óc Eo)
+        ├── cho_cao_lanh.jpg       # Chợ trung tâm thành phố Cao Lãnh
+        ├── xoai_cao_lanh.jpg      # Xoài Cát Chu Cao Lãnh đặc sản OCOP xuất khẩu
+        ├── sen_dong_thap.jpg      # Hoa sen Đất Sen Hồng Đồng Tháp
+        ├── banh_xeo_cao_lanh.jpg  # Bánh xèo Cao Lãnh vàng giòn (phố ẩm thực Lê Duẩn)
+        ├── ca_loc_nuong_trui.jpg  # Cá lóc đồng nướng trui mắm me cuốn lá sen non
+        └── am_thuc.jpg            # Ảnh đại diện ẩm thực truyền thống miền Tây
 ```
 
 Chúc bạn xuất bản trang web thành công lên GitHub Pages!
