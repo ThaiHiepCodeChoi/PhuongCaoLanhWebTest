@@ -73,10 +73,6 @@
         <button id="themeToggle" class="btn-icon" aria-label="Đổi giao diện Sáng/Tối" title="Đổi giao diện">
           <i class="fa-solid fa-moon"></i>
         </button>
-        <button id="githubModalBtn" class="btn-github" title="Xem hướng dẫn tải lên GitHub Pages">
-          <i class="fa-brands fa-github"></i>
-          <span>Public GitHub</span>
-        </button>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -533,7 +529,7 @@
             <li><a href="https://dongthap.gov.vn" target="_blank" rel="noopener">Cổng TTĐT Tỉnh Đồng Tháp</a></li>
             <li><a href="https://dichvucong.dongthap.gov.vn" target="_blank" rel="noopener">Dịch vụ công trực tuyến</a></li>
             <li><a href="https://dulich.dongthap.gov.vn" target="_blank" rel="noopener">Du lịch Đồng Tháp</a></li>
-            <li><a href="#" id="openGuideFooter">Hướng dẫn Public GitHub</a></li>
+            <li><a href="#info">Thông tin liên hệ</a></li>
           </ul>
         </div>
       </div>
@@ -553,66 +549,6 @@
   <button id="backToTop" class="btn-back-to-top" aria-label="Lên đầu trang">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
-
-  <!-- MODAL: HƯỚNG DẪN PUBLIC LÊN GITHUB PAGES -->
-  <div class="modal-backdrop" id="githubModal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <div class="modal-title">
-          <i class="fa-brands fa-github text-emerald"></i>
-          <h3>Hướng Dẫn Đưa Trang Web Lên GitHub Pages</h3>
-        </div>
-        <button class="modal-close" id="modalCloseBtn" aria-label="Đóng">&times;</button>
-      </div>
-      
-      <div class="modal-body">
-        <p class="guide-intro">
-          Trang web này được xây dựng bằng <strong>HTML, CSS và JavaScript thuần</strong>, toàn bộ hình ảnh và tài nguyên đều nằm sẵn trong thư mục, cực kỳ thích hợp để chạy miễn phí trên <strong>GitHub Pages</strong>.
-        </p>
-
-        <div class="step-box">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>Tạo Repository mới trên GitHub</h4>
-            <p>Truy cập <a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a>, đặt tên repo (ví dụ: <code>web-phuong-cao-lanh</code>) và chọn chế độ <strong>Public</strong>.</p>
-          </div>
-        </div>
-
-        <div class="step-box">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>Mở Terminal tại thư mục này và chạy các lệnh Git sau:</h4>
-            <div class="code-block-wrapper">
-              <pre><code>git init
-git add .
-git commit -m "Khoi tao website Phuong Cao Lanh"
-git branch -M main
-git remote add origin https://github.com/USERNAME/web-phuong-cao-lanh.git
-git push -u origin main</code></pre>
-              <button class="btn-copy" id="copyGitBtn" title="Sao chép lệnh"><i class="fa-regular fa-copy"></i> Copy</button>
-            </div>
-            <small class="note-text">* Lưu ý: Thay <code>USERNAME</code> bằng tên tài khoản GitHub của bạn.</small>
-          </div>
-        </div>
-
-        <div class="step-box">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>Bật tính năng GitHub Pages</h4>
-            <p>Trên trang repository GitHub: Vào mục <strong>Settings</strong> ➔ Chọn tab <strong>Pages</strong> ➔ Tại mục <strong>Branch</strong>, chọn <code>main</code> và thư mục <code>/ (root)</code> ➔ Bấm <strong>Save</strong>.</p>
-            <div class="success-pill">
-              <i class="fa-solid fa-circle-check"></i>
-              Sau 1-2 phút, trang web của bạn sẽ hoạt động tại địa chỉ: <code>https://USERNAME.github.io/web-phuong-cao-lanh/</code>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn btn-primary-sm" id="modalUnderstoodBtn">Đã Hiểu</button>
-      </div>
-    </div>
-  </div>
 
   <!-- IMAGE LIGHTBOX MODAL -->
   <div class="lightbox" id="lightbox">

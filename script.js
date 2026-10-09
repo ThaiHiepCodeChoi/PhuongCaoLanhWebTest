@@ -13,14 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
   
-  // Modals & Lightbox
-  const githubModal = document.getElementById('githubModal');
-  const githubModalBtn = document.getElementById('githubModalBtn');
-  const openGuideFooter = document.getElementById('openGuideFooter');
-  const modalCloseBtn = document.getElementById('modalCloseBtn');
-  const modalUnderstoodBtn = document.getElementById('modalUnderstoodBtn');
-  const copyGitBtn = document.getElementById('copyGitBtn');
-  
+  // Lightbox
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxCaption = document.getElementById('lightboxCaption');
@@ -241,53 +234,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === lightbox) closeLightbox();
   });
 
-  /* ==========================================================================
-     GITHUB PAGES MODAL & CLIPBOARD
-     ========================================================================== */
-  function openGithubModal(e) {
-    if (e) e.preventDefault();
-    githubModal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeGithubModal() {
-    githubModal.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  githubModalBtn.addEventListener('click', openGithubModal);
-  if (openGuideFooter) openGuideFooter.addEventListener('click', openGithubModal);
-  modalCloseBtn.addEventListener('click', closeGithubModal);
-  modalUnderstoodBtn.addEventListener('click', closeGithubModal);
-
-  githubModal.addEventListener('click', (e) => {
-    if (e.target === githubModal) closeGithubModal();
-  });
-
   // Global ESC Key Close
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeLightbox();
-      closeGithubModal();
     }
-  });
-
-  // Copy Git Code
-  copyGitBtn.addEventListener('click', () => {
-    const gitCommands = `git init\ngit add .\ngit commit -m "Khoi tao website Phuong Cao Lanh"\ngit branch -M main\ngit remote add origin https://github.com/USERNAME/web-phuong-cao-lanh.git\ngit push -u origin main`;
-    
-    navigator.clipboard.writeText(gitCommands).then(() => {
-      const originalHTML = copyGitBtn.innerHTML;
-      copyGitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Đã chép!';
-      copyGitBtn.style.background = '#059669';
-      
-      setTimeout(() => {
-        copyGitBtn.innerHTML = originalHTML;
-        copyGitBtn.style.background = '';
-      }, 2000);
-    }).catch(err => {
-      console.error('Không thể sao chép lệnh:', err);
-    });
   });
 
 });
