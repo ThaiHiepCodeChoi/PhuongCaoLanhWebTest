@@ -1257,7 +1257,75 @@ a {
   font-size: 0.85rem;
   color: var(--text-dim);
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.25rem;
+}
+
+.footer-bottom-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-creator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.footer-creator i {
+  color: var(--primary-mint);
+  font-size: 0.95rem;
+}
+
+.footer-creator strong {
+  color: var(--gold-light);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.footer-creator-action {
+  display: flex;
+  align-items: center;
+}
+
+.btn-creator-fb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #1877f2, #0d65d9);
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(24, 119, 242, 0.35);
+  transition: var(--transition);
+}
+
+.btn-creator-fb:hover {
+  background: linear-gradient(135deg, #2b84f6, #1877f2);
+  box-shadow: 0 6px 22px rgba(24, 119, 242, 0.55);
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+
+.btn-creator-fb i.fa-facebook {
+  font-size: 1.15rem;
+}
+
+.btn-creator-fb i.fa-arrow-up-right-from-square {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  transition: transform 0.2s ease;
+}
+
+.btn-creator-fb:hover i.fa-arrow-up-right-from-square {
+  transform: translate(2px, -2px);
+  opacity: 1;
 }
 
 .footer-socials {
@@ -1630,6 +1698,16 @@ a {
 
   .footer-top {
     grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .footer-creator {
+    justify-content: center;
   }
 }
 
