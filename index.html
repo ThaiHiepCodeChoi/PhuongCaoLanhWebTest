@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phường Cao Lãnh - Trái Tim Đất Sen Hồng Đồng Tháp</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Trang web giới thiệu về Phường Cao Lãnh, tỉnh Đồng Tháp - trung tâm chính trị, văn hóa, kinh tế năng động với di sản lịch sử Cụ Nguyễn Sinh Sắc, cù lao sinh thái Tân Thuận Đông và đặc sản xứ sen hồng.">
+  <meta name="keywords" content="Phường Cao Lãnh, Cao Lãnh Đồng Tháp, Đất Sen Hồng, Di tích Nguyễn Sinh Sắc, Cù lao Tân Thuận Đông, Xoài Cao Lãnh, Bánh xèo Cao Lãnh">
+  <meta name="author" content="Phường Cao Lãnh - Đồng Tháp">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Phường Cao Lãnh - Trái Tim Đất Sen Hồng">
+  <meta property="og:description" content="Khám phá Phường Cao Lãnh: Không gian đô thị xanh hiện đại, bề dày di sản lịch sử và văn hóa ẩm thực miền sông nước Tiền Giang.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons (Free CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5C20 5 13 13 13 22C13 26.5 16 30 20 32C24 30 27 26.5 27 22C27 13 20 5 20 5Z" fill="url(#lotus-grad)" />
+            <path d="M20 12C20 12 8 18 6 25C4.5 30 9 34 14 34C18 34 20 30 20 30C20 30 22 34 26 34C31 34 35.5 30 34 25C32 18 20 12 20 12Z" fill="url(#lotus-petals)" opacity="0.85"/>
+            <circle cx="20" cy="27" r="3.5" fill="#FBBF24" />
+            <defs>
+              <linearGradient id="lotus-grad" x1="20" y1="5" x2="20" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FB7185"/>
+                <stop offset="1" stop-color="#E11D48"/>
+              </linearGradient>
+              <linearGradient id="lotus-petals" x1="6" y1="12" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#34D399"/>
+                <stop offset="1" stop-color="#059669"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">PHƯỜNG CAO LÃNH</span>
+          <span class="brand-subtitle">Đồng Tháp • Đất Sen Hồng</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Trang Chủ</a>
+        <a href="#about" class="nav-link">Giới Thiệu</a>
+        <a href="#merger" class="nav-link">Sáp Nhập 2025</a>
+        <a href="#destinations" class="nav-link">Điểm Đến</a>
+        <a href="#cuisine" class="nav-link">Ẩm Thực</a>
+        <a href="#info" class="nav-link">Hành Chính</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Đổi giao diện Sáng/Tối" title="Đổi giao diện">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="githubModalBtn" class="btn-github" title="Xem hướng dẫn tải lên GitHub Pages">
+          <i class="fa-brands fa-github"></i>
+          <span>Public GitHub</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Mở menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <img src="assets/images/hero.jpg" alt="Toàn cảnh vẻ đẹp Phường Cao Lãnh Đồng Tháp" class="hero-img">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-down">
+          <span class="badge-dot"></span>
+          <span>Trung Tâm Chính Trị, Kinh Tế & Văn Hóa Tỉnh Đồng Tháp</span>
+        </div>
+        
+        <h1 class="hero-title animate-fade-up">
+          Chào Mừng Đến Với <br>
+          <span class="text-gradient">Phường Cao Lãnh</span>
+        </h1>
+
+        <p class="hero-desc animate-fade-up delay-1">
+          Nơi hội tụ tinh hoa đất Sen Hồng bên dòng Tiền Giang trĩu nặng phù sa. Sự kết tinh giữa bề dày lịch sử cách mạng hào hùng, nét đẹp sinh thái miệt vườn trù phú và nhịp sống đô thị văn minh, hiện đại.
+        </p>
+
+        <div class="hero-buttons animate-fade-up delay-2">
+          <a href="#destinations" class="btn btn-primary">
+            <i class="fa-solid fa-compass"></i> Khám Phá Địa Danh
+          </a>
+          <a href="#merger" class="btn btn-outline">
+            <i class="fa-solid fa-newspaper"></i> Dấu Mốc Lịch Sử 2025
+          </a>
+        </div>
+
+        <!-- STATS COUNTERS -->
+        <div class="hero-stats animate-fade-up delay-3">
+          <div class="stat-card">
+            <div class="stat-number" data-target="73.3">0</div>
+            <div class="stat-unit">km²</div>
+            <div class="stat-label">Diện tích tự nhiên</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="137000">0</div>
+            <div class="stat-unit">+</div>
+            <div class="stat-label">Quy mô dân số</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="9">0</div>
+            <div class="stat-unit">xã/phường</div>
+            <div class="stat-label">Hợp nhất phát triển</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-unit">%</div>
+            <div class="stat-label">Đô thị văn minh</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down-indicator" aria-label="Cuộn xuống để xem nội dung">
+        <i class="fa-solid fa-angles-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Tổng Quan Địa Phương</span>
+          <h2 class="section-title">Vùng Đất Năng Động Bên Dòng Tiền Giang</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Phường Cao Lãnh giữ vị trí trái tim đô thị của tỉnh Đồng Tháp, nơi giao thoa của sông nước miệt vườn thanh bình với không gian phát triển kinh tế số và dịch vụ hiện đại.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon icon-emerald">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <h3 class="feature-title">Vị Trí Trung Tâm</h3>
+            <p class="feature-text">
+              Tọa lạc tại khu vực trung tâm đô thị tỉnh Đồng Tháp, là đầu mối kết nối giao thông đường bộ và đường thủy quan trọng nối liền các huyện thị và tỉnh bạn qua cầu Cao Lãnh.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon icon-rose">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <h3 class="feature-title">Bản Sắc Đất Sen Hồng</h3>
+            <p class="feature-text">
+              Mang đậm nét đẹp thuần khiết của hoa sen - biểu tượng niềm tự hào của con người Đồng Tháp nghĩa tình, năng động và mến khách.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon icon-amber">
+              <i class="fa-solid fa-tree"></i>
+            </div>
+            <h3 class="feature-title">Hệ Sinh Thái Trù Phú</h3>
+            <p class="feature-text">
+              Sở hữu những miệt vườn cây ăn trái quanh năm trĩu quả ven sông Tiền, đặc biệt là vựa xoài Cát Chu và Cát Hòa Lộc trứ danh xuất khẩu quốc tế.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon icon-cyan">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h3 class="feature-title">Đô Thị Xanh - Văn Minh</h3>
+            <p class="feature-text">
+              Hệ thống công viên cây xanh, hồ sinh thái Văn Miếu, bờ kè thoáng mát tạo nên chất lượng sống yên bình nhưng không ngừng vươn mình đổi mới.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIC MERGER 2025 SECTION -->
+    <section class="section merger-section" id="merger">
+      <div class="container">
+        <div class="merger-wrapper">
+          <div class="merger-info">
+            <span class="badge-tag">Cột Mốc Lịch Sử Đột Phá</span>
+            <h2 class="merger-title">Hợp Nhất 09 Đơn Vị Hành Chính (Từ 01/07/2025)</h2>
+            <p class="merger-p">
+              Thực hiện chủ trương sắp xếp đơn vị hành chính cấp xã, phường giai đoạn 2023 - 2025, <strong>Phường Cao Lãnh</strong> chính thức đi vào hoạt động trên cơ sở hợp nhất toàn bộ diện tích và dân số của 9 đơn vị thành viên:
+            </p>
+            
+            <div class="units-grid">
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Phường 1</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Phường 3</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Phường 4</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Phường 6</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Phường Hòa Thuận</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Xã Hòa An</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Xã Tịnh Thới</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Xã Tân Thuận Tây</div>
+              <div class="unit-item"><i class="fa-solid fa-circle-check"></i> Xã Tân Thuận Đông</div>
+            </div>
+
+            <div class="merger-callout">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Trụ sở làm việc Đảng ủy - HĐND - UBND Phường:</strong>
+                <p>Số 03, Đường 30 Tháng 4, Phường Cao Lãnh, Tỉnh Đồng Tháp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="merger-visual">
+            <div class="glass-stat-card">
+              <div class="stat-highlight">
+                <span class="number">73.33</span>
+                <span class="unit">km²</span>
+              </div>
+              <div class="stat-desc">Tổng diện tích tự nhiên rộng lớn mở ra không gian quy hoạch phát triển bền vững</div>
+            </div>
+
+            <div class="glass-stat-card">
+              <div class="stat-highlight">
+                <span class="number">137.000+</span>
+                <span class="unit">Người</span>
+              </div>
+              <div class="stat-desc">Cộng đồng cư dân đoàn kết, hiếu khách, cần cù và giàu khát vọng sáng tạo</div>
+            </div>
+
+            <div class="glass-stat-card">
+              <div class="stat-highlight">
+                <span class="number">01 / 07 / 2025</span>
+              </div>
+              <div class="stat-desc">Dấu mốc lịch sử mở ra trang phát triển rực rỡ mới cho thủ phủ Đất Sen Hồng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section class="section destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Danh Lam Thắng Cảnh</span>
+          <h2 class="section-title">Điểm Đến & Di Sản Nổi Bật</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Khám phá những địa điểm mang đậm giá trị lịch sử thiêng liêng, vẻ đẹp sinh thái ngút ngàn và không gian thư giãn tuyệt vời tại Phường Cao Lãnh.
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-filter="all">Tất Cả Địa Danh</button>
+          <button class="tab-btn" data-filter="heritage">Di Tích - Lịch Sử</button>
+          <button class="tab-btn" data-filter="ecotour">Sinh Thái Miệt Vườn</button>
+          <button class="tab-btn" data-filter="urban">Không Gian Đô Thị</button>
+        </div>
+
+        <div class="destinations-grid">
+          <!-- Card 1: Nguyen Sinh Sac -->
+          <div class="destination-card" data-category="heritage">
+            <div class="card-img-wrap">
+              <img src="assets/images/nguyen_sinh_sac.jpg" alt="Khu di tích Cụ Phó bảng Nguyễn Sinh Sắc" class="card-img zoomable-img">
+              <span class="card-badge badge-heritage"><i class="fa-solid fa-monument"></i> Di Tích Lịch Sử</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Khu Di Tích Cụ Phó Bảng Nguyễn Sinh Sắc</h3>
+              <p class="card-text">
+                Nơi yên nghỉ của thân sinh Chủ tịch Hồ Chí Minh vĩ đại. Quần thể gồm lăng mộ hình cánh sen thanh thoát, đền thờ uy nghiêm, nhà sàn Bác Hồ mô phỏng tỉ lệ 1:1 và không gian Làng Hòa An xưa mộc mạc đậm chất Nam Bộ.
+              </p>
+              <div class="card-meta">
+                <span><i class="fa-solid fa-map-pin"></i> Đường Phạm Hữu Lầu</span>
+                <span><i class="fa-regular fa-clock"></i> Mở cửa hằng ngày</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Tan Thuan Dong Eco -->
+          <div class="destination-card" data-category="ecotour">
+            <div class="card-img-wrap">
+              <img src="assets/images/xoai_cao_lanh.jpg" alt="Vườn Xoài & Cù lao Tân Thuận Đông" class="card-img zoomable-img">
+              <span class="card-badge badge-eco"><i class="fa-solid fa-leaf"></i> Du Lịch Sinh Thái</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cù Lao Sinh Thái Tân Thuận Đông</h3>
+              <p class="card-text">
+                Viên ngọc xanh giữa dòng sông Tiền mênh mông. Du khách được hòa mình vào không gian miệt vườn rợp bóng nhãn, xoài, trải nghiệm chèo xuồng ba lá, đạp xe qua những con đường làng râm mát và tham gia "Chợ quê Tân Thuận Đông" dân dã.
+              </p>
+              <div class="card-meta">
+                <span><i class="fa-solid fa-map-pin"></i> Cù lao Tân Thuận Đông</span>
+                <span><i class="fa-solid fa-ship"></i> Trải nghiệm xuồng/phà</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Cao Lanh Mango Groves -->
+          <div class="destination-card" data-category="ecotour">
+            <div class="card-img-wrap">
+              <img src="assets/images/xoai_cao_lanh.jpg" alt="Vườn Xoài Cát Chu Cao Lãnh" class="card-img zoomable-img">
+              <span class="card-badge badge-eco"><i class="fa-solid fa-sun"></i> Vườn Cây Trái</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Vườn Xoài Cát Chu & Tân Thuận Tây</h3>
+              <p class="card-text">
+                Thủ phủ của giống Xoài Cát Chu và Xoài Cát Hòa Lộc nức tiếng. Đến đây, du khách được tận mắt chiêm ngưỡng những gốc xoài cổ thụ trĩu quả, thưởng thức xoài chín cây ngọt lịm và trải nghiệm mô hình "Cây xoài nhà tôi" độc đáo.
+              </p>
+              <div class="card-meta">
+                <span><i class="fa-solid fa-map-pin"></i> Tân Thuận Tây - Tịnh Thới</span>
+                <span><i class="fa-solid fa-award"></i> Đặc sản OCOP 5 sao</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Van Mieu Park -->
+          <div class="destination-card" data-category="urban">
+            <div class="card-img-wrap">
+              <img src="assets/images/hero.jpg" alt="Công viên Văn Miếu & Quảng trường TP" class="card-img zoomable-img">
+              <span class="card-badge badge-urban"><i class="fa-solid fa-city"></i> Không Gian Đô Thị</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Công Viên Văn Miếu & Hồ Khổng Tử</h3>
+              <p class="card-text">
+                Lá phổi xanh ngát giữa trung tâm phường với hồ sen thơ mộng, đường dạo bộ uốn lượn và Văn Thánh Miếu ghi danh truyền thống hiếu học của đất và người Đồng Tháp. Là điểm hẹn sinh hoạt thể thao, văn hóa rộn rã mỗi sớm chiều.
+              </p>
+              <div class="card-meta">
+                <span><i class="fa-solid fa-map-pin"></i> Đường Lý Thường Kiệt</span>
+                <span><i class="fa-solid fa-person-walking"></i> Check-in & Thư giãn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUISINE SECTION -->
+    <section class="section cuisine-section" id="cuisine">
+      <div class="container">
+        <div class="cuisine-layout">
+          <div class="cuisine-media">
+            <div class="media-container">
+              <img src="assets/images/am_thuc.jpg" alt="Ẩm thực đặc sản Cao Lãnh Đồng Tháp" class="cuisine-main-img zoomable-img">
+              <div class="cuisine-tag">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Mỹ Vị Miền Tây Nam Bộ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cuisine-content">
+            <span class="section-subtitle">Mỹ Vị Xứ Sen</span>
+            <h2 class="section-title">Hương Vị Ẩm Thực Khó Quên</h2>
+            <div class="title-underline left"></div>
+            <p class="section-description">
+              Đến với Phường Cao Lãnh, du khách không chỉ say đắm lòng người bởi cảnh sắc thanh bình mà còn ngất ngây bởi tinh hoa ẩm thực dân dã nhưng đậm đà thi vị.
+            </p>
+
+            <div class="dish-list">
+              <div class="dish-item">
+                <div class="dish-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                <div class="dish-details">
+                  <h4 class="dish-name">Bánh Xèo Cao Lãnh</h4>
+                  <p class="dish-desc">Vỏ bánh giòn rụm màu vàng nghệ thơm nước cốt dừa, nhân thịt vịt băm hoặc tôm thịt cùng củ hủ dừa ngọt mát, cuốn cùng hơn 20 loại rau vườn tươi non.</p>
+                </div>
+              </div>
+
+              <div class="dish-item">
+                <div class="dish-icon"><i class="fa-solid fa-fish"></i></div>
+                <div class="dish-details">
+                  <h4 class="dish-name">Cá Lóc Nướng Trui Cuốn Lá Sen Non</h4>
+                  <p class="dish-desc">Cá lóc đồng nướng rơm thơm lừng, thịt ngọt béo được cuộn trong búp lá sen non thoang thoảng vị chát dịu, chấm nước mắm me sệt cay nồng khó cưỡng.</p>
+                </div>
+              </div>
+
+              <div class="dish-item">
+                <div class="dish-icon"><i class="fa-solid fa-spa"></i></div>
+                <div class="dish-details">
+                  <h4 class="dish-name">Các Món Ngon Từ Sen Đồng Tháp</h4>
+                  <p class="dish-desc">Cơm hấp lá sen, gỏi ngó sen tôm thịt, chè hạt sen long nhãn ngọt thanh và tách trà hoa sen thơm ngát ướp hương sông nước trời mây.</p>
+                </div>
+              </div>
+
+              <div class="dish-item">
+                <div class="dish-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                <div class="dish-details">
+                  <h4 class="dish-name">Xoài Cát Chu Cao Lãnh Trứ Danh</h4>
+                  <p class="dish-desc">Mùi thơm nồng nàn, thịt chắc ngọt đậm đà, hạt nhỏ, vỏ mỏng - món quà biếu quý giá được bè bạn năm châu đặc biệt yêu thích.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADMINISTRATIVE INFO & MAP SECTION -->
+    <section class="section info-section" id="info">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Thông Tin Hành Chính & Bản Đồ</span>
+          <h2 class="section-title">Ủy Ban Nhân Dân Phường Cao Lãnh</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Tra cứu thông tin cơ quan hành chính, vị trí địa lý và các kênh liên hệ trực tuyến phục vụ người dân, doanh nghiệp và du khách.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <!-- Info Details Card -->
+          <div class="info-card">
+            <h3 class="info-card-title"><i class="fa-solid fa-circle-info"></i> Thông Tin Cơ Bản</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-label"><i class="fa-solid fa-building"></i> Cơ quan quản lý:</span>
+                <span class="info-value">Ủy ban nhân dân Phường Cao Lãnh</span>
+              </li>
+              <li>
+                <span class="info-label"><i class="fa-solid fa-map-location-dot"></i> Địa chỉ trụ sở:</span>
+                <span class="info-value">Số 03, đường 30 Tháng 4, Phường Cao Lãnh, Tỉnh Đồng Tháp</span>
+              </li>
+              <li>
+                <span class="info-label"><i class="fa-solid fa-calendar-check"></i> Ngày thành lập:</span>
+                <span class="info-value">01 tháng 07 năm 2025</span>
+              </li>
+              <li>
+                <span class="info-label"><i class="fa-solid fa-chart-area"></i> Diện tích:</span>
+                <span class="info-value">Khoảng 73,33 km²</span>
+              </li>
+              <li>
+                <span class="info-label"><i class="fa-solid fa-users"></i> Dân số:</span>
+                <span class="info-value">Hơn 137.000 người</span>
+              </li>
+              <li>
+                <span class="info-label"><i class="fa-solid fa-clock"></i> Giờ làm việc:</span>
+                <span class="info-value">Thứ 2 - Thứ 6 (07:00 - 11:30 | 13:30 - 17:00)</span>
+              </li>
+              <li>
+                <span class="info-label"><i class="fa-solid fa-phone"></i> Hotline hành chính:</span>
+                <span class="info-value">1900 1022 (Tổng đài dịch vụ công Đồng Tháp)</span>
+              </li>
+            </ul>
+
+            <div class="quick-contact-actions">
+              <a href="https://maps.google.com/?q=Số+03+đường+30/4+Phường+Cao+Lãnh+Đồng+Tháp" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                <i class="fa-solid fa-diamond-turn-right"></i> Chỉ Đường Trên Google Maps
+              </a>
+              <a href="https://dongthap.gov.vn" target="_blank" rel="noopener noreferrer" class="btn btn-primary-sm">
+                <i class="fa-solid fa-globe"></i> Cổng TTĐT Đồng Tháp
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Map Card -->
+          <div class="map-card">
+            <div class="map-header">
+              <span><i class="fa-solid fa-map"></i> Bản Đồ Vị Trí Trung Tâm Phường</span>
+              <span class="badge-live">Trực tuyến</span>
+            </div>
+            <div class="map-container">
+              <iframe 
+                title="Bản đồ vị trí Phường Cao Lãnh Đồng Tháp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62837.28114674797!2d105.5947702043697!3d10.455799988223685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65660851493b%3A0xe54c1221b0bc7475!2zVHAuIENhbyBMw6NuaCwgxJDhu5NuZyBUaMOhcCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-inline">
+            <i class="fa-solid fa-spa text-lotus"></i>
+            <span class="footer-title">PHƯỜNG CAO LÃNH</span>
+          </div>
+          <p class="footer-tagline">
+            Trang thông tin giới thiệu quảng bá nét đẹp, di sản văn hóa, con người và tiềm năng phát triển của Phường Cao Lãnh, tỉnh Đồng Tháp.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Liên Kết Nhanh</h4>
+          <ul>
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#about">Tổng quan</a></li>
+            <li><a href="#merger">Sáp nhập 2025</a></li>
+            <li><a href="#destinations">Điểm đến</a></li>
+            <li><a href="#cuisine">Ẩm thực</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Thông Tin Hữu Ích</h4>
+          <ul>
+            <li><a href="https://dongthap.gov.vn" target="_blank" rel="noopener">Cổng TTĐT Tỉnh Đồng Tháp</a></li>
+            <li><a href="https://dichvucong.dongthap.gov.vn" target="_blank" rel="noopener">Dịch vụ công trực tuyến</a></li>
+            <li><a href="https://dulich.dongthap.gov.vn" target="_blank" rel="noopener">Du lịch Đồng Tháp</a></li>
+            <li><a href="#" id="openGuideFooter">Hướng dẫn Public GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Trang Giới Thiệu Phường Cao Lãnh. Sẵn sàng triển khai trên GitHub Pages.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="btn-back-to-top" aria-label="Lên đầu trang">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- MODAL: HƯỚNG DẪN PUBLIC LÊN GITHUB PAGES -->
+  <div class="modal-backdrop" id="githubModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-brands fa-github text-emerald"></i>
+          <h3>Hướng Dẫn Đưa Trang Web Lên GitHub Pages</h3>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Đóng">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <p class="guide-intro">
+          Trang web này được xây dựng bằng <strong>HTML, CSS và JavaScript thuần</strong>, toàn bộ hình ảnh và tài nguyên đều nằm sẵn trong thư mục, cực kỳ thích hợp để chạy miễn phí trên <strong>GitHub Pages</strong>.
+        </p>
+
+        <div class="step-box">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Tạo Repository mới trên GitHub</h4>
+            <p>Truy cập <a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a>, đặt tên repo (ví dụ: <code>web-phuong-cao-lanh</code>) và chọn chế độ <strong>Public</strong>.</p>
+          </div>
+        </div>
+
+        <div class="step-box">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Mở Terminal tại thư mục này và chạy các lệnh Git sau:</h4>
+            <div class="code-block-wrapper">
+              <pre><code>git init
+git add .
+git commit -m "Khoi tao website Phuong Cao Lanh"
+git branch -M main
+git remote add origin https://github.com/USERNAME/web-phuong-cao-lanh.git
+git push -u origin main</code></pre>
+              <button class="btn-copy" id="copyGitBtn" title="Sao chép lệnh"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <small class="note-text">* Lưu ý: Thay <code>USERNAME</code> bằng tên tài khoản GitHub của bạn.</small>
+          </div>
+        </div>
+
+        <div class="step-box">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Bật tính năng GitHub Pages</h4>
+            <p>Trên trang repository GitHub: Vào mục <strong>Settings</strong> ➔ Chọn tab <strong>Pages</strong> ➔ Tại mục <strong>Branch</strong>, chọn <code>main</code> và thư mục <code>/ (root)</code> ➔ Bấm <strong>Save</strong>.</p>
+            <div class="success-pill">
+              <i class="fa-solid fa-circle-check"></i>
+              Sau 1-2 phút, trang web của bạn sẽ hoạt động tại địa chỉ: <code>https://USERNAME.github.io/web-phuong-cao-lanh/</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary-sm" id="modalUnderstoodBtn">Đã Hiểu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Đóng ảnh">&times;</button>
+    <img src="" alt="Ảnh phóng to" class="lightbox-img" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
